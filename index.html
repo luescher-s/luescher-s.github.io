@@ -4,131 +4,34 @@
   <meta charset="UTF-8">
   <title>Dr. Sandro Lüscher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google Fonts for a modern look -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Roboto', Arial, sans-serif;
-      background: url('background.jpg') no-repeat center top fixed;
+      background: url('background.png') no-repeat center top fixed;
       background-size: cover;
       background-attachment: fixed;
       color: #222;
       margin: 0;
-      padding: 0;
+      padding: 0;h
       min-height: 100vh;
-    header {
-      background: rgba(255,255,255,0.35);
-      backdrop-filter: blur(8px);
-      border-radius: 12px;
-      margin: 24px auto 0 auto;
-      width: fit-content;
-      padding: 16px 48px;
+    }
+    .glass-header {
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.40);
+      backdrop-filter: blur(6px);
+      border-radius: 18px;
+      padding: 18px 54px;
+      box-shadow: 0 4px 24px rgba(90,141,238,0.10);
       color: #1a3554;
+      text-align: center;
+      z-index: 10;
+      min-width: 280px;
+      max-width: 90vw;
     }
     .container {
       background: #fff;
-      max-width: 800px;
-      margin: -60px auto 40px auto;
-      box-shadow: 0 8px 32px rgba(90, 141, 238, 0.15);
-      border-radius: 15px;
-      padding: 40px 30px 30px 30px;
-      text-align: center;
-    }
-    .profile-image {
-      max-width: 260px;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(90, 141, 238, 0.11);
-      margin-bottom: 26px;
-    }
-    h1 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 2.4em;
-      font-weight: 700;
-    }
-    h2 {
-      margin-top: 35px;
-      font-size: 1.6em;
-      font-weight: 700;
-      color: #4967b2;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.7;
-      margin: 18px 0;
-    }
-    .links {
-      margin: 22px 0;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 22px;
-      margin: 0 6px;
-      background: #5a8dee;
-      color: #fff !important;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.18s;
-      box-shadow: 0 1px 5px rgba(90, 141, 238, 0.09);
-    }
-    .btn:hover {
-      background: #3b5cb8;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 22px 0 0 0;
-    }
-    ul li {
-      font-size: 1.1em;
-      margin-bottom: 8px;
-    }
-    footer {
-      background: #e7eaf3;
-      color: #686e7a;
-      padding: 20px 0 18px 0;
-      text-align: center;
-      font-size: 0.97em;
-      margin-top: 40px;
-      border-top: 1px solid #d6dffa;
-    }
-    @media (max-width: 600px) {
-      .container { padding: 20px 6vw; }
-      h1 { font-size: 1.5em; }
-      h2 { font-size: 1.2em; }
-      .profile-image { max-width: 95vw; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Dr. Sandro Lüscher</h1>
-    <div>Welcome to my personal, GitHub-hosted webpage!</div>
-  </header>
-  <div class="container">
-    <img src="image.png" alt="Giving a presentation at a podium" class="profile-image">
-    <h2>About Me</h2>
-    <p>Welcome to my personal website! I’m Sandro Lüscher, a political scientist and a postdoctoral researcher at the Centre for Democracy Studies in Aarau (since January 2025) after earning my PhD at the Department of Political Science, University of Zurich in November 2024. I am currently working on how new digital technologies could be integrated into democratic governance.<br>
-    <strong>Fields of interest:</strong> Digital democracy, democratic innovations, Swiss politics, electoral politics, electoral systems (and their reforms), political representation.
-    </p>
-    <div class="links">
-      <a href="mailto:luescher@zda.uzh.ch" class="btn">Contact me</a>
-      <a href="https://github.com/luescher-s" class="btn" target="_blank">My GitHub</a>
-    </div>
-    <h2>My Projects</h2>
-    <ul>
-      <li>🚀 Project One</li>
-      <li>📝 Project Two</li>
-      <li>🔗 <a href="https://github.com/luescher-s" target="_blank">See more on GitHub</a></li>
-    </ul>
-  </div>
-  <footer>
-    &copy; <span id="current-year"></span> Lüscher. Hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  </footer>
-  <script>
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      max-width: 
