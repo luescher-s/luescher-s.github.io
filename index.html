@@ -4,71 +4,124 @@
   <meta charset="UTF-8">
   <title>Dr. Sandro Lüscher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(120deg, #f6faff 0%, #e6edfa 100%);
       color: #222;
       margin: 0;
       padding: 0;
-      text-align: center;
+      min-height: 100vh;
     }
     header {
       background: #5a8dee;
       color: white;
-      padding: 40px 0 20px 0;
+      padding: 50px 0 30px 0;
+      margin-bottom: 32px;
     }
-    .header-content {
-      max-width: 450px;
-      margin: 0 auto;
+    .container {
+      background: #fff;
+      max-width: 800px;
+      margin: -60px auto 40px auto;
+      box-shadow: 0 8px 32px rgba(90, 141, 238, 0.15);
+      border-radius: 15px;
+      padding: 40px 30px 30px 30px;
       text-align: center;
     }
-    main {
-      padding: 30px;
+    .profile-image {
+      max-width: 260px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(90, 141, 238, 0.11);
+      margin-bottom: 26px;
     }
-    a {
-      color: #5a8dee;
+    h1 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 2.4em;
+      font-weight: 700;
+    }
+    h2 {
+      margin-top: 35px;
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #4967b2;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin: 18px 0;
+    }
+    .links {
+      margin: 22px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      margin: 0 6px;
+      background: #5a8dee;
+      color: #fff !important;
+      border-radius: 25px;
       text-decoration: none;
+      font-weight: 500;
+      transition: background 0.18s;
+      box-shadow: 0 1px 5px rgba(90, 141, 238, 0.09);
     }
-    a:hover {
-      text-decoration: underline;
+    .btn:hover {
+      background: #3b5cb8;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 22px 0 0 0;
+    }
+    ul li {
+      font-size: 1.1em;
+      margin-bottom: 8px;
     }
     footer {
-      background: #eee;
-      color: #666;
-      padding: 20px 0;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      left: 0;
+      background: #e7eaf3;
+      color: #686e7a;
+      padding: 20px 0 18px 0;
+      text-align: center;
+      font-size: 0.97em;
+      margin-top: 40px;
+      border-top: 1px solid #d6dffa;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 20px 6vw; }
+      h1 { font-size: 1.5em; }
+      h2 { font-size: 1.2em; }
+      .profile-image { max-width: 95vw; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <h1>Dr. Sandro Lüscher</h1>
-      <p>Welcome to my personal, GitHub-hosted webpage!</p>
-    </div>
+    <h1>Dr. Sandro Lüscher</h1>
+    <div>Welcome to my personal, GitHub-hosted webpage!</div>
   </header>
-  <img src="image.png" alt="Giving a presentation at a podium" style="max-width: 100%; height: auto;">
-  <main>
+  <div class="container">
+    <img src="image.png" alt="Giving a presentation at a podium" class="profile-image">
     <h2>About Me</h2>
-    <p>Welcome to my personal website! I’m Sandro Lüscher, a political scientist and a postdoctoral researcher at the Centre for Democracy Studies in Aarau (since January 2025) after earning my PhD at the Department of Political Science, University of Zurich in November 2024. I am currently working on how new digital technologies could be integrated into democratic governance.
-Fields of interest: Digital democracy, democratic innovations, Swiss politics, electoral politics, electoral systems (and their reforms), political representation.</p>
-    <p>
-      <a href="mailto:luescher@zda.uzh.ch">Contact me</a> |
-      <a href="https://github.com/luescher-s" target="_blank">My GitHub</a>
+    <p>Welcome to my personal website! I’m Sandro Lüscher, a political scientist and a postdoctoral researcher at the Centre for Democracy Studies in Aarau (since January 2025) after earning my PhD at the Department of Political Science, University of Zurich in November 2024. I am currently working on how new digital technologies could be integrated into democratic governance.<br>
+    <strong>Fields of interest:</strong> Digital democracy, democratic innovations, Swiss politics, electoral politics, electoral systems (and their reforms), political representation.
     </p>
+    <div class="links">
+      <a href="mailto:luescher@zda.uzh.ch" class="btn">Contact me</a>
+      <a href="https://github.com/luescher-s" class="btn" target="_blank">My GitHub</a>
+    </div>
     <h2>My Projects</h2>
-    <ul style="list-style: none; padding: 0;">
+    <ul>
       <li>🚀 Project One</li>
       <li>📝 Project Two</li>
       <li>🔗 <a href="https://github.com/luescher-s" target="_blank">See more on GitHub</a></li>
     </ul>
-  </main>
+  </div>
   <footer>
-    &copy; <span id="current-year"></span> Luescher. Hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+    &copy; <span id="current-year"></span> Lüscher. Hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   </footer>
   <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
