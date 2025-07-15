@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to luescher.github.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #5a8dee;
+      color: white;
+      padding: 40px 0 20px 0;
+    }
+    main {
+      padding: 30px;
+    }
+    a {
+      color: #5a8dee;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #eee;
+      color: #666;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to luescher.github.io!</h1>
+    <p>This is my personal website hosted with GitHub Pages.</p>
+  </header>
+  <main>
+    <h2>About Me</h2>
+    <p>Hello! I’m Luescher. This is a demo homepage for my website.</p>
+    <p>
+      <a href="mailto:your@email.com">Contact me</a> |
+      <a href="https://github.com/luescher-s" target="_blank">My GitHub</a>
+    </p>
+    <h2>My Projects</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>🚀 Project One</li>
+      <li>📝 Project Two</li>
+      <li>🔗 <a href="https://github.com/luescher-s" target="_blank">See more on GitHub</a></li>
+    </ul>
+  </main>
+  <footer>
+    &copy; 2025 Luescher. Hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  </footer>
+</body>
+</html>
