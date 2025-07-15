@@ -41,6 +41,7 @@
 </head>
 <body>
   <header>
+<img src="image.png" alt="Giving a presentation at a podium" style="max-width: 100%; height: auto;">
     <h1>Welcome to luescher.github.io!</h1>
     <p>This is my personal website hosted with GitHub Pages.</p>
   </header>
