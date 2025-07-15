@@ -41,7 +41,6 @@
 </head>
 <body>
   <header>
-<img src="image.png" alt="Giving a presentation at a podium" style="max-width: 100%; height: auto;">
     <h1>Welcome to luescher.github.io!</h1>
     <p>This is my personal website hosted with GitHub Pages.</p>
   </header>
@@ -52,6 +51,7 @@
       <a href="mailto:your@email.com">Contact me</a> |
       <a href="https://github.com/luescher-s" target="_blank">My GitHub</a>
     </p>
+<img src="image.png" alt="Giving a presentation at a podium" style="max-width: 100%; height: auto;">
     <h2>My Projects</h2>
     <ul style="list-style: none; padding: 0;">
       <li>🚀 Project One</li>
