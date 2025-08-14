@@ -4,119 +4,147 @@
   <meta charset="UTF-8">
   <title>Dr. Sandro Lüscher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Political scientist researching digital democracy and institutional design.">
   <link rel="icon" href="favicon.JPG" type="image/jpeg">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <style>
-    body {
+    :root{
+      --bg: #0e1116;
+      --card: rgba(255,255,255,0.82);
+      --text: #151515;
+      --muted: #5b6675;
+      --accent: #6fbfc0;
+      --accent-hover: #58a9aa;
+      --ring: rgba(111,191,192,0.45);
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.10);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
       font-family: 'Roboto', Arial, sans-serif;
-      background: url('background.jpg') no-repeat center top fixed;
+      margin:0;
+      color:var(--text);
+      background: var(--bg) url('background.jpg') no-repeat center top fixed;
       background-size: cover;
-      color: #222;
-      margin: 0;
+      line-height:1.6;
+    }
+    .backdrop{
+      position:fixed; inset:0;
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(255,255,255,0.18), transparent 60%);
+      pointer-events:none;
+    }
+    .container{
+      max-width: 760px;
+      margin: clamp(32px,6vh,80px) auto 48px auto;
+      padding: 40px 28px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      text-align:center;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    header{margin-bottom: 18px}
+    .profile-name{
+      font-size: clamp(28px, 3.2vw, 40px);
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      margin: 0 0 6px 0;
+      color:#0a0a0a;
+    }
+    .subtitle{
+      margin:0;
+      font-size: 16px;
+      color: var(--muted);
+    }
+    .profile-divider{
+      height:1px; border:0; width:72%;
+      margin: 20px auto 24px auto;
+      background: linear-gradient(90deg,transparent 0%, #dfe6f3 50%, transparent 100%);
+    }
+    .profile-image{
+      width: 200px; max-width: 60vw; aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    }
+    .lede{
+      font-size: 18px;
+      margin: 20px auto 8px auto;
+      max-width: 60ch;
+    }
+    .interests{
+      margin: 10px auto 4px auto;
       padding: 0;
-      min-height: 100vh;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 8px 14px;
+      max-width: 68ch;
+      color: #2a2f36;
+      font-size: 15px;
     }
-    .container {
-      background: #fff;
-      max-width: 700px;
-      margin: 64px auto 40px auto;
-      box-shadow: 0 8px 32px rgba(90, 141, 238, 0.13);
-      border-radius: 18px;
-      padding: 44px 32px 32px 32px;
-      text-align: center;
-      position: relative;
-      border: 2px solid #000;
+    .links{margin: 22px 0 4px 0; display:flex; flex-wrap:wrap; gap:10px; justify-content:center}
+    .btn{
+      appearance:none; border:1px solid rgba(0,0,0,0.08);
+      background: white;
+      color: #0f141a !important;
+      padding: 10px 18px;
+      border-radius: 999px;
+      text-decoration:none; font-weight:500;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease, background .12s ease;
+      line-height:1;
+      display:inline-flex; align-items:center; gap:8px;
     }
-    .profile-name {
-      font-size: 2.3em;
-      font-weight: 700;
-      color: #000;
-      margin-bottom: 8px;
+    .btn:hover{ background: #f7fbfb; transform: translateY(-1px); }
+    .btn:focus-visible{ outline: none; box-shadow: 0 0 0 3px var(--ring); }
+    .btn.accent{ background: var(--accent); border-color: transparent; }
+    .btn.accent:hover{ background: var(--accent-hover); }
+    footer{
+      text-align:center; color:#9aa3b2; font-size: 14px;
+      padding: 18px 12px 30px 12px;
     }
-    .profile-divider {
-      height:1px;
-      margin: 0 auto 28px auto;
-      background: linear-gradient(90deg, transparent 0%, #d4def7 50%, transparent 100%);
-      border: none;
-      width: 70%;
+    footer a{ color:#7ea7ff; text-decoration:none }
+    footer a:hover{ text-decoration:underline }
+    @media (max-width: 640px){
+      .container{ padding: 28px 18px }
     }
-    .profile-image {
-      max-width: 200px;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(90, 141, 238, 0.09);
-      margin-bottom: 26px;
-      margin-top: 8px;
-    }
-    h2 {
-      margin-top: 32px;
-      font-size: 1.5em;
-      font-weight: 700;
-      color: #000;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.7;
-      margin: 18px 0;
-    }
-    .links {
-      margin: 22px 0;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 22px;
-      margin: 0 6px 10px 6px;
-      background: #8bcfd0;
-      color: #000 !important;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.18s;
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
-    }
-    .btn:hover {
-      background: #6ab5b5;
-    }
-    footer {
-      background: #e7eaf3;
-      color: #686e7a;
-      padding: 20px 0 18px 0;
-      text-align: center;
-      font-size: 0.97em;
-      margin-top: 40px;
-      border-top: 1px solid #d6dffa;
-    }
-    @media (max-width: 600px) {
-      .container { padding: 20px 2vw; margin: 18px 2vw 0 2vw; }
-      .profile-name { font-size: 1.4em; }
-      h2 { font-size: 1.08em; }
-      .profile-image { max-width: 95vw; }
+    @media (prefers-reduced-motion: reduce){
+      *{ transition: none !important; scroll-behavior: auto !important }
     }
   </style>
 </head>
 <body>
+  <div class="backdrop" aria-hidden="true"></div>
+
   <div class="container">
-    <div class="profile-name">Dr. Sandro Lüscher</div>
+    <header>
+      <h1 class="profile-name">Dr. Sandro Lüscher</h1>
+      <p class="subtitle">Political Scientist · Postdoctoral Researcher · Digital Democracy</p>
+    </header>
+
     <hr class="profile-divider">
+
     <img src="image.png" alt="Giving a presentation at a podium" class="profile-image">
-    <p>Welcome to my personal webpage. I’m Sandro Lüscher, a political scientist and postdoctoral researcher at the Centre for Democracy Studies in Aarau after earning my PhD at the Department of Political Science, University of Zurich. I am currently working on how new digital technologies could be integrated into democratic governance.</p>
-    <p>Fields of interest: Digital democracy, democratic innovations, Swiss politics, electoral politics, electoral systems (and their reforms), political representation.</p>
-    <div class="links">
-      <a href="mailto:luescher@zda.uzh.ch" class="btn">E-Mail</a>
-      <a href="https://github.com/luescher-s" class="btn" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/sandro-l%C3%BCscher-03a441338/" class="btn" target="_blank" title="LinkedIn">LinkedIn</a>
-      <a href="https://x.com/luescher_sandro" class="btn" target="_blank" title="Twitter / X">Twitter</a>
-      <a href="https://orcid.org/0000-0002-6092-5422" class="btn" target="_blank" title="ORCID">ORCID</a>
-      <a href="media.html" class="btn">Media</a>
-    </div>
-  </div>
-  <footer>
-    &copy; <span id="current-year"></span> Sandro Lüscher. Hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  </footer>
-  <script>
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
 
+    <p class="lede">
+      I research how digital technologies can be integrated into democratic governance and institutional design.
+    </p>
 
+    <ul class="interests">
+      <li>Digital democracy</li>
+      <li>Democratic innovations</li>
+      <li>Swiss politics</li>
+      <li>Electoral politics</li>
+      <li>Electoral systems and reform</li>
+      <li>Political representation</li>
+    </ul>
+
+    <div class="links" aria-label="Links">
+      <a href="mailto:luescher@zda.uzh.ch" class="btn accent">E-Mail</a>
+      <a href="https://github.com/luescher-s" class="btn" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/sandro-l%C3%BCscher-03a441338/" class="btn" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      <a href="https:
