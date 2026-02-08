@@ -2,129 +2,248 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Behoerdenberatung und Gutachten | Sandro Lüscher</title>
+    <title>Lüscher Consulting | Politikwissenschaftliche Gutachten und Beratung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.JPG">
+
     <style>
+        :root {
+            --text: #1a1a1a;
+            --muted: #555;
+            --accent: #2c3e50;
+            --light: #f5f7f9;
+            --border: #e0e0e0;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #111;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
         }
-        h1, h2 {
-            font-weight: normal;
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 24px;
         }
-        h1 {
-            margin-bottom: 0.5em;
+
+        header {
+            margin-bottom: 60px;
         }
+
+        header h1 {
+            font-size: 2.2em;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+            color: var(--accent);
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: var(--muted);
+            max-width: 760px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
         h2 {
-            margin-top: 2em;
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: var(--accent);
         }
+
         ul {
-            margin-left: 20px;
+            margin: 0;
+            padding-left: 22px;
         }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: var(--light);
+            padding: 28px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
         a {
-            color: #000;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
             text-decoration: underline;
         }
-        .note {
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
             font-size: 0.9em;
-            color: #555;
-            margin-top: 50px;
-            border-top: 1px solid #ddd;
-            padding-top: 15px;
+            color: var(--muted);
+            max-width: 760px;
+        }
+
+        footer a {
+            color: var(--muted);
         }
     </style>
 </head>
 
 <body>
 
-<h1>Behoerdenberatung und Gutachten</h1>
+<div class="container">
 
-<p>
-Wahlrechts- und Institutionenreformen gehoeren zu den folgenreichsten Entscheidungen
-auf kantonaler und kommunaler Ebene. Ihre Auswirkungen auf Proportionalitaet,
-Repräsentation und parteipolitische Kräfteverhältnisse sind komplex und oft erst
-mittelfristig sichtbar.
-</p>
+<header>
+    <h1>Lüscher Consulting</h1>
+    <p>
+        Unabhängige, anwendungsorientierte Gutachten und Beratungsleistungen
+        im Bereich Wahlsysteme, politische Institutionen und politische
+        Entscheidungsprozesse.
+    </p>
+</header>
 
-<p>
-Ich unterstuetze Behoerden mit unabhaengigen, empirisch fundierten Gutachten und
-Simulationen, die Reformoptionen vergleichbar machen und ihre wahrscheinlichen
-Wirkungen transparent und nachvollziehbar aufzeigen.
-</p>
+<section class="highlight">
+    <p>
+        Wahlrechts- und Institutionenreformen gehören zu den folgenreichsten
+        politischen Entscheidungen. Ihre Auswirkungen auf Proportionalität,
+        Repräsentation und parteipolitische Kräfteverhältnisse sind komplex
+        und oft erst langfristig sichtbar.
+    </p>
 
-<h2>Expertise</h2>
-<p>
-Ich bin promovierter Politologe. Meine Dissertation befasste sich mit kantonalen
-Wahlsystemreformen in der Schweiz und analysierte deren Entstehung, Ausgestaltung
-und politische Wirkungen auf Basis vergleichender Fallstudien und quantitativer
-Wirkungsanalysen.
-</p>
+    <p>
+        Lüscher Consulting unterstützt politische und gesellschaftliche
+        Akteure mit empirisch fundierten Analysen und Simulationen, die
+        Reformoptionen vergleichbar machen und deren wahrscheinliche
+        Wirkungen transparent und nachvollziehbar aufzeigen.
+    </p>
+</section>
 
-<h2>Was Sie erhalten</h2>
-<ul>
-    <li>Vergleichbare Wirkungsanalysen alternativer Wahlsysteme</li>
-    <li>Simulationen von Sitzverteilungen, Proportionalitaet und Repräsentation</li>
-    <li>Abschätzung institutioneller Nebenwirkungen vor Reformentscheiden</li>
-    <li>Klare, empirisch fundierte Entscheidungsgrundlagen für Behoerden</li>
-</ul>
+<section>
+    <h2>Expertise</h2>
+    <p>
+        Dr. Sandro Lüscher ist promovierter Politologe. Seine Dissertation
+        befasste sich mit kantonalen Wahlsystemreformen in der Schweiz und
+        analysierte deren Entstehung, Ausgestaltung und politische Wirkungen
+        anhand vergleichender Fallstudien sowie quantitativer
+        Wirkungsanalysen.
+    </p>
+</section>
 
-<h2>Schwerpunkt Wahlsysteme</h2>
-<p>
-Der Schwerpunkt meiner Beratung liegt auf Wahlsystemen auf kantonaler und
-kommunaler Ebene, insbesondere:
-</p>
+<section>
+    <h2>Was Sie erhalten</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Wirkungsanalysen</h3>
+            <p>
+                Vergleichbare Analysen alternativer Wahlsysteme und
+                institutioneller Regelungen.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Simulationen</h3>
+            <p>
+                Simulationen von Sitzverteilungen, Proportionalität und
+                Repräsentation unter verschiedenen Reformoptionen.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Entscheidungsgrundlagen</h3>
+            <p>
+                Klare, empirisch fundierte Entscheidungsgrundlagen für
+                strategische, politische und organisatorische Prozesse.
+            </p>
+        </div>
+    </div>
+</section>
 
-<ul>
-    <li>Proportionale und gemischte Wahlsysteme</li>
-    <li>Sitzverteilungsverfahren, einschliesslich doppelt-proportionaler Verfahren</li>
-    <li>Reformfolgen für Parteien, Regionen und Minderheiten</li>
-    <li>Ex-ante- und Ex-post-Analysen von Wahlsystemreformen</li>
-</ul>
+<section>
+    <h2>Schwerpunkt Wahlsysteme</h2>
+    <ul>
+        <li>Proportionale und gemischte Wahlsysteme</li>
+        <li>Sitzverteilungsverfahren, einschliesslich doppelt-proportionaler Verfahren</li>
+        <li>Ex-ante- und Ex-post-Analysen von Wahlsystemreformen</li>
+        <li>Reformfolgen für Parteien, Regionen und Minderheiten</li>
+    </ul>
+</section>
 
-<h2>Weitere Themenfelder</h2>
-<ul>
-    <li>Politische Institutionen und Entscheidungsprozesse</li>
-    <li>Direktdemokratische Verfahren und Abstimmungsregeln</li>
-    <li>Konsultations- und Vernehmlassungsverfahren</li>
-    <li>Vergleichende institutionelle Analysen</li>
-</ul>
+<section>
+    <h2>Weitere Themenfelder</h2>
+    <ul>
+        <li>Politische Institutionen und Entscheidungsprozesse</li>
+        <li>Direktdemokratische Verfahren und Abstimmungsregeln</li>
+        <li>Konsultations- und Vernehmlassungsverfahren</li>
+        <li>Vergleichende institutionelle Analysen</li>
+    </ul>
+</section>
 
-<h2>Arbeitsweise</h2>
-<ul>
-    <li>Unabhaengig und transparent</li>
-    <li>Empirisch, daten- und simulationsbasiert</li>
-    <li>Vergleichend statt normativ</li>
-    <li>Konsequent auf Entscheidungsrelevanz ausgerichtet</li>
-</ul>
+<section>
+    <h2>Typische Auftraggeber</h2>
+    <ul>
+        <li>Behörden auf kommunaler, kantonaler und nationaler Ebene</li>
+        <li>Politische Parteien und Fraktionen</li>
+        <li>Verbände, Organisationen und Stiftungen</li>
+        <li>Weitere interessierte politische und gesellschaftliche Akteure</li>
+    </ul>
+</section>
 
-<h2>Typische Auftraggeber</h2>
-<ul>
-    <li>Kantons- und Gemeindebehoerden</li>
-    <li>Staatskanzleien</li>
-    <li>Parlamentsdienste</li>
-    <li>Behoerdennahe Institutionen</li>
-</ul>
+<section>
+    <h2>Arbeitsweise</h2>
+    <ul>
+        <li>Unabhängig und transparent</li>
+        <li>Empirisch, daten- und simulationsbasiert</li>
+        <li>Vergleichend statt normativ</li>
+        <li>Konsequent auf Entscheidungsrelevanz ausgerichtet</li>
+    </ul>
+</section>
 
-<h2>Kontakt</h2>
-<p>
-<a href="mailto:luescher@zda.uzh.ch">luescher@zda.uzh.ch</a>
-</p>
+<section>
+    <h2>Kontakt</h2>
+    <p>
+        <a href="mailto:luescher@zda.uzh.ch">luescher@zda.uzh.ch</a>
+    </p>
+</section>
 
-<div class="note">
-<p>
-Die Beratungs- und Gutachtertaetigkeit erfolgt ausserhalb meiner universitaeren
-Anstellung. Es werden keine Drittmittel akquiriert und keine Forschungs- oder
-Publikationsauftraege uebernommen. Universitaere Infrastruktur wird nicht genutzt.
-</p>
+<footer>
+    <p>
+        Lüscher Consulting ist eine selbständige Beratungstätigkeit von
+        Dr. Sandro Lüscher. Die Tätigkeit erfolgt ausserhalb der
+        universitären Anstellung. Es werden keine Drittmittel akquiriert
+        und keine Forschungs- oder Publikationsaufträge übernommen.
+    </p>
+    <p>
+        <a href="index.html">Zurück zur akademischen Website</a>
+    </p>
+</footer>
 
-<p>
-<a href="index.html">Zurueck zur akademischen Seite</a>
-</p>
 </div>
 
 </body>
