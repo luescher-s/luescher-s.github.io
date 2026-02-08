@@ -1,88 +1,210 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Gutachten – Lüscher Consulting</title>
+    <meta charset="UTF-8">
+    <title>Lüscher Consulting | Politikwissenschaftliche Gutachten und Beratung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.JPG">
 
-<style>
-@page {
-    size: A4;
-    margin: 3cm;
-}
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --muted: #555;
+            --accent: #2c3e50;
+            --light: #f7f9fb;
+            --border: #e0e0e0;
+        }
 
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #1a1a1a;
-    margin: 0;
-}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
+        }
 
-.cover {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-}
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
 
-.header {
-    margin-top: 40px;
-}
+        header {
+            margin-bottom: 80px;
+        }
 
-.title {
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 80px;
-    line-height: 1.3;
-}
+        header p {
+            font-size: 1.1em;
+            color: var(--muted);
+            max-width: 760px;
+        }
 
-.subtitle {
-    font-size: 18px;
-    color: #555;
-    margin-top: 20px;
-}
+        section {
+            margin-bottom: 50px;
+        }
 
-.meta {
-    font-size: 14px;
-    color: #555;
-    margin-top: 60px;
-}
+        h2 {
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
 
-.footer {
-    font-size: 12px;
-    color: #777;
-}
-</style>
+        ul {
+            margin: 0;
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: var(--light);
+            padding: 28px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 100px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9em;
+            color: var(--muted);
+            max-width: 760px;
+        }
+
+        footer a {
+            color: var(--muted);
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="cover">
+<div class="container">
 
-    <div class="header">
-        <strong>Lüscher Consulting</strong><br>
-        Gutachten zu Wahlsystemen und politischen Institutionen
+<header>
+    <div style="max-width: 820px;">
+        <!-- Logo -->
+        <svg width="820" height="200" viewBox="0 0 1000 260"
+             xmlns="http://www.w3.org/2000/svg"
+             style="margin-bottom: 20px;">
+
+          <defs>
+            <style>
+              .c1 { fill: #2c3e50; }
+              .c2 { fill: #4f7db3; }
+              .c3 { fill: #7fa6d8; }
+
+              .text-main {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 58px;
+                font-weight: 600;
+                fill: #2c3e50;
+              }
+
+              .text-sub {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 22px;
+                fill: #4f7db3;
+              }
+            </style>
+          </defs>
+
+          <rect x="40" y="60" width="50" height="50" class="c1"/>
+          <rect x="100" y="60" width="50" height="50" class="c2"/>
+          <rect x="40" y="120" width="50" height="50" class="c2"/>
+          <rect x="100" y="120" width="50" height="50" class="c3"/>
+          <polygon points="40,170 40,140 120,60 150,60" fill="#ffffff"/>
+
+          <text x="200" y="115" class="text-main">Lüscher | Consulting</text>
+          <text x="200" y="155" class="text-sub">
+            Gutachten zu Wahlsystemen und politischen Institutionen
+          </text>
+        </svg>
+
+        <p>
+            Unabhängige, anwendungsorientierte Gutachten und Beratungsleistungen
+            im Bereich Wahlsysteme, politische Institutionen und politische
+            Entscheidungsprozesse.
+        </p>
     </div>
+</header>
 
-    <div>
-        <div class="title">
-            Gutachten zu den institutionellen Auswirkungen<br>
-            einer Reform des kantonalen Wahlsystems
-        </div>
+<section class="highlight">
+    <p>
+        Wahlrechts- und Institutionenreformen gehören zu den folgenreichsten
+        politischen Entscheidungen. Ihre Auswirkungen auf Proportionalität,
+        Repräsentation und parteipolitische Kräfteverhältnisse sind komplex
+        und oft erst langfristig sichtbar.
+    </p>
+    <p>
+        Ich unterstütze politische und gesellschaftliche Akteure mit
+        empirisch fundierten Analysen und Simulationen, die Reformoptionen
+        vergleichbar machen und deren wahrscheinliche Wirkungen transparent
+        und nachvollziehbar aufzeigen.
+    </p>
+</section>
 
-        <div class="subtitle">
-            Analyse von Proportionalität, Repräsentation<br>
-            und politischen Folgewirkungen
-        </div>
+<section>
+    <h2>Expertise</h2>
+    <p>… (inhalt unverändert) …</p>
+</section>
 
-        <div class="meta">
-            Auftraggeber: [Institution]<br>
-            Datum: [Monat Jahr]<br>
-            Autor: Dr. Sandro Lüscher
-        </div>
-    </div>
+<section>
+    <h2>Arbeitsweise</h2>
+    <ul>
+        <li>Unabhängig und transparent</li>
+        <li>Mit wissenschaftlicher Akribie</li>
+        <li>Empirisch, daten- und simulationsbasiert</li>
+        <li>Vergleichend statt normativ</li>
+    </ul>
+</section>
 
-    <div class="footer">
-        Lüscher Consulting · Unabhängige politikwissenschaftliche Gutachten
-    </div>
+<footer>
+    <p>
+        Lüscher Consulting ist eine selbständige Beratungstätigkeit von
+        Dr. Sandro Lüscher. Die Tätigkeit erfolgt ausserhalb der
+        universitären Anstellung. Es werden ausschliesslich mandatierte
+        Gutachten und Beratungsleistungen erbracht; es erfolgt keine
+        Einwerbung von Forschungsfördermitteln.
+    </p>
+    <p>
+        <a href="index.html">Zurück zur akademischen Website</a>
+    </p>
+</footer>
 
 </div>
 
