@@ -1,223 +1,238 @@
 <!DOCTYPE html>
-<html lang="de-CH">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Lüscher Consulting | Analysen zu politischen Institutionen und Prozessen</title>
-    <meta name="description"
-          content="Empirisch fundierte Analysen und Simulationen zu politischen Institutionen, Wahlsystemen und Reformen für öffentliche und politische Akteure in der Schweiz.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dr. Sandro Lüscher">
+  <meta charset="UTF-8">
+  <title>Lüscher Consulting | Analysen zu politischen Institutionen und Prozessen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.JPG" type="image/jpeg">
 
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
-    <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #2c3e50;
+      --light: #f5f7f9;
+      --border: #e0e0e0;
+    }
 
-    <style>
-        :root {
-            --text: #1a1a1a;
-            --muted: #555;
-            --accent: #2c3e50;
-            --light: #f5f7f9;
-            --border: #e0e0e0;
-        }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+    }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text);
-            background-color: #ffffff;
-            margin: 0;
-            line-height: 1.65;
-        }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
 
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 60px 24px;
-        }
+    header {
+      margin-bottom: 80px;
+    }
 
-        header {
-            margin-bottom: 80px;
-        }
+    header p {
+      font-size: 1.1em;
+      color: var(--muted);
+      max-width: 760px;
+    }
 
-        h1 {
-            font-size: 2.2em;
-            font-weight: 600;
-            margin: 0 0 10px 0;
-            color: var(--accent);
-        }
+    section {
+      margin-bottom: 50px;
+    }
 
-        header p {
-            font-size: 1.1em;
-            color: var(--muted);
-            max-width: 760px;
-        }
+    h2 {
+      font-size: 1.4em;
+      font-weight: 500;
+      margin-bottom: 15px;
+      color: var(--accent);
+    }
 
-        section {
-            margin-bottom: 50px;
-            max-width: 760px;
-        }
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
 
-        h2 {
-            font-size: 1.4em;
-            font-weight: 500;
-            margin-bottom: 15px;
-            color: var(--accent);
-        }
+    li {
+      margin-bottom: 8px;
+    }
 
-        ul {
-            margin: 0;
-            padding-left: 22px;
-        }
+    .highlight {
+      background-color: var(--light);
+      padding: 28px;
+      border-left: 3px solid var(--accent);
+    }
 
-        li {
-            margin-bottom: 8px;
-        }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
 
-        .highlight {
-            background-color: var(--light);
-            padding: 28px;
-            border-left: 3px solid var(--accent);
-        }
+    .card {
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #fff;
+    }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 24px;
-            max-width: 960px;
-        }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+      font-weight: 500;
+      color: var(--accent);
+    }
 
-        .card {
-            border: 1px solid var(--border);
-            padding: 20px;
-            border-radius: 4px;
-            background-color: #fff;
-        }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-        .card h3 {
-            margin-top: 0;
-            font-size: 1.1em;
-            font-weight: 500;
-            color: var(--accent);
-        }
+    a:hover {
+      text-decoration: underline;
+    }
 
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
+    footer {
+      margin-top: 100px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9em;
+      color: var(--muted);
+      max-width: 760px;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 100px;
-            padding-top: 30px;
-            border-top: 1px solid var(--border);
-            font-size: 0.9em;
-            color: var(--muted);
-            max-width: 760px;
-        }
-
-        footer a {
-            color: var(--muted);
-        }
-    </style>
+    footer a {
+      color: var(--muted);
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<div class="container">
+    <header>
+      <div style="max-width: 820px;">
+        <!-- Logo -->
+        <svg
+          width="720"
+          height="175"
+          viewBox="0 0 1000 260"
+          xmlns="http://www.w3.org/2000/svg"
+          style="margin-bottom: 20px;"
+        >
+          <defs>
+            <style>
+              .c1 { fill: #2c3e50; }
+              .c2 { fill: #4f7db3; }
+              .c3 { fill: #7fa6d8; }
+            </style>
+          </defs>
 
-<header>
-    <h1>Lüscher | Consulting</h1>
-    <p>Analysen zu politischen Institutionen und Entscheidungsprozessen</p>
-</header>
+          <!-- Icon -->
+          <rect x="40" y="60" width="50" height="50" class="c1"/>
+          <rect x="100" y="60" width="50" height="50" class="c2"/>
+          <rect x="40" y="120" width="50" height="50" class="c2"/>
+          <rect x="100" y="120" width="50" height="50" class="c3"/>
+          <polygon points="40,170 40,140 120,60 150,60" fill="#ffffff"/>
 
-<section class="highlight">
-    <p>
-        Politische Institutionen strukturieren kollektive Entscheidungsprozesse durch formale Regeln.
-        Änderungen dieser Regeln sind folgenreich und beeinflussen politische Ergebnisse,
-        Machtverteilungen und Repräsentation.
-    </p>
-    <p>
-        Ich unterstütze öffentliche und politische Akteure mit empirisch fundierten Analysen
-        und Simulationen, die institutionelle Reformoptionen vergleichbar machen und
-        deren wahrscheinliche Wirkungen transparent und nachvollziehbar aufzeigen.
-    </p>
-</section>
+          <text
+            x="200"
+            y="120"
+            font-family="Helvetica, Arial, sans-serif"
+            font-size="56"
+            fill="#2c3e50"
+          >
+            <tspan font-weight="600">Lüscher</tspan>
+            <tspan font-weight="300" letter-spacing="0.2"> | Consulting</tspan>
+          </text>
 
-<section>
-    <h2>Expertise</h2>
-    <p>
-        Mein Name ist Sandro Lüscher. Ich bin Politologe, wohnhaft in Aarau, und habe 2024
-        an der Universität Zürich zu kantonalen Wahlsystemreformen in der Schweiz promoviert.
-        In meiner Dissertation analysierte ich Entstehung, Ausgestaltung und politische Wirkungen
-        dieser Reformen auf Basis vergleichender Fallstudien und quantitativer Wirkungsanalysen.
-    </p>
-    <p>
+          <text
+            x="200"
+            y="162"
+            font-family="Helvetica, Arial, sans-serif"
+            font-size="23"
+            fill="#4f7db3"
+          >
+            Analysen zu politischen Institutionen und Prozessen
+          </text>
+        </svg>
+      </div>
+    </header>
+
+    <section class="highlight">
+      <p>
+        Politische Institutionen sind Regelwerke zur Steuerung komplexer gesellschaftlicher Entscheidungsprozesse.
+        Änderungen an diesen "Spielregeln" sind folgenreich und wirken sich vielfältig auf Politik und Gesellschaft aus.
+      </p>
+      <p>
+        Ich unterstütze öffentliche oder politische Akteure mit empirisch fundierten Analysen und Simulationen,
+        die Reformoptionen vergleichbar machen und deren wahrscheinliche Wirkungen transparent und nachvollziehbar aufzeigen.
+      </p>
+    </section>
+
+    <section>
+      <h2>Expertise</h2>
+      <p>
+        Mein Name ist Sandro Lüscher. Ich bin Politologe, wohnhaft in Aarau, und habe 2024 an der Universität Zürich
+        zu kantonalen Wahlsystemreformen in der Schweiz promoviert.
+        Dabei habe ich u.a. deren Entstehung, Ausgestaltung und politischen Auswirkungen analysiert.
+        Die Arbeit basierte auf vergleichenden Fallstudien sowie quantitativen Wirkungsanalysen.
         Derzeit arbeite ich als Postdoc am Zentrum für Demokratie der Universität Zürich.
-        Meine Forschung befasst sich mit Vernehmlassungs- und Konsultationsprozessen,
-        institutionellen Reformen sowie alternativen Entscheidungslogiken in politischen Systemen.
-    </p>
-</section>
+      </p>
+      <p>
+        In meiner aktuellen Forschung befasse ich mich unter anderem mit Vernehmlassungs- und Konsultationsprozessen
+        sowie mit Fragen institutioneller Reformen und alternativer Entscheidungslogiken in politischen Systemen.
+      </p>
+    </section>
 
-<section>
-    <h2>Was ich anbiete</h2>
-    <div class="grid">
+    <section>
+      <h2>Was ich anbiete</h2>
+      <div class="grid">
         <div class="card">
-            <h3>Wirkungsanalysen</h3>
-            <p>
-                Vergleichende Analysen alternativer Wahlsysteme und institutioneller Regelungen,
-                etwa im Hinblick auf Proportionalität und Repräsentation.
-            </p>
+          <h3>Wirkungsanalysen</h3>
+          <p>Vergleichbare Analysen alternativer Wahlsysteme und institutioneller Regelungen.</p>
         </div>
         <div class="card">
-            <h3>Simulationen</h3>
-            <p>
-                Simulationen von Sitzverteilungen und Wahlergebnissen unter bestehenden
-                und alternativen Regelwerken.
-            </p>
+          <h3>Simulationen</h3>
+          <p>Simulationen von Sitzverteilungen, Proportionalität und Repräsentation.</p>
         </div>
         <div class="card">
-            <h3>Entscheidungsgrundlagen</h3>
-            <p>
-                Klare, empirisch fundierte Entscheidungsberichte für politische und
-                administrative Reform- und Gesetzgebungsprozesse.
-            </p>
+          <h3>Entscheidungsgrundlagen</h3>
+          <p>Klare, empirisch fundierte Entscheidungsgrundlagen für politische und administrative Prozesse.</p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section>
-    <h2>Arbeitsweise</h2>
-    <ul>
+    <section>
+      <h2>Arbeitsweise</h2>
+      <ul>
         <li>Unabhängig und transparent</li>
-        <li>Wissenschaftlich präzise</li>
+        <li>Mit wissenschaftlicher Akribie</li>
         <li>Empirisch, daten- und simulationsbasiert</li>
         <li>Vergleichend statt normativ</li>
-    </ul>
-</section>
+      </ul>
+    </section>
 
-<section>
-    <h2>Kontakt</h2>
-    <p>
-        <a href="mailto:luescher@zda.uzh.ch">luescher@zda.uzh.ch</a>
-    </p>
-</section>
+    <section>
+      <h2>Kontakt</h2>
+      <p>luescher@zda.uzh.ch</p>
+    </section>
 
-<footer>
-    <p>
+    <footer>
+      <p>
         Lüscher Consulting ist eine selbständige Beratungstätigkeit von Dr. Sandro Lüscher.
         Die Tätigkeit erfolgt ausserhalb der universitären Anstellung.
-        Es werden ausschliesslich mandatierte Gutachten und Beratungsleistungen erbracht.
-        Es erfolgt keine Einwerbung von Forschungsfördermitteln.
-    </p>
-    <p>
+        Es werden ausschliesslich mandatierte Gutachten und Beratungsleistungen erbracht;
+        es erfolgt keine Einwerbung von Forschungsfördermitteln.
+      </p>
+      <p>
         <a href="index.html">Zurück zur akademischen Website</a>
-    </p>
-</footer>
+      </p>
+    </footer>
 
-</div>
-
+  </div>
 </body>
 </html>
