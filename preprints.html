@@ -6,6 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.JPG" type="image/jpeg">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+  <!-- Google Scholar metadata -->
+
+  <meta name="citation_title" content="Proportionality in two dimensions: resolving an old dilemma of political (mis)representation">
+  <meta name="citation_author" content="Sandro Lüscher">
+  <meta name="citation_publication_date" content="2021/02/04">
+  <meta name="citation_conference_title" content="SVPW-Kongress">
+  <meta name="citation_pdf_url" content="https://luescher-s.github.io/preprints/Proportionality-in-Two-Dimensions_Luescher_20210129.pdf">
+
+  <meta name="citation_title" content="Parlamentswahlen nach dem doppelt-proportionalen Sitzzuteilungsverfahren im Lichte der territorialen Repräsentation">
+  <meta name="citation_author" content="Sandro Lüscher">
+  <meta name="citation_journal_title" content="Zeitschrift für Parlamentsfragen">
+  <meta name="citation_volume" content="54">
+  <meta name="citation_issue" content="3">
+  <meta name="citation_firstpage" content="571">
+  <meta name="citation_lastpage" content="595">
+  <meta name="citation_publication_date" content="2023">
+  <meta name="citation_doi" content="10.5771/0340-1758-2023-3-571">
+  <meta name="citation_pdf_url" content="https://luescher-s.github.io/preprints/zparl-2023-preprint.pdf">
+
   <style>
     body{
       font-family:'Roboto',Arial,sans-serif;
@@ -31,7 +51,9 @@
     a{color:#5a8dee;text-decoration:none}
     a:hover{text-decoration:underline}
   </style>
+
 </head>
+
 <body>
   <div class="container">
     <h1>Preprints</h1>
@@ -45,38 +67,46 @@
         title: "Parlamentswahlen nach dem doppelt-proportionalen Sitzzuteilungsverfahren im Lichte der territorialen Repräsentation",
         year: 2023,
         journal: "Zeitschrift für Parlamentsfragen (ZParl)",
-        volume: "54", issue: "3",
+        volume: "54",
+        issue: "3",
         pages: "571–595",
         doi: "10.5771/0340-1758-2023-3-571",
-        pdf: "preprints/zparl-2023-preprint.pdf"   // <-- hosted in your repo
+        pdf: "preprints/zparl-2023-preprint.pdf"
       }
-      // Add more preprints here as needed
     ];
 
-    // Render entries
     PREPRINTS
       .sort((a,b)=> (b.year||0)-(a.year||0))
       .forEach(p => {
         const root = document.getElementById('preprint-list');
-        const wrap = document.createElement('div'); wrap.className = 'entry';
+        const wrap = document.createElement('div');
+        wrap.className = 'entry';
 
         const badge = document.createElement('span');
-        badge.className = 'badge'; badge.textContent = 'Preprint';
+        badge.className = 'badge';
+        badge.textContent = 'Preprint';
 
-        const content = document.createElement('div'); content.className = 'content';
+        const content = document.createElement('div');
+        content.className = 'content';
 
-        const h = document.createElement('h2'); h.className = 'title'; h.textContent = p.title;
+        const h = document.createElement('h2');
+        h.className = 'title';
+        h.textContent = p.title;
 
-        const meta1 = document.createElement('p'); meta1.className = 'meta';
+        const meta1 = document.createElement('p');
+        meta1.className = 'meta';
         meta1.innerHTML = `Published in: <em>${p.journal}</em>, ${p.volume}(${p.issue}), ${p.year}, pp. ${p.pages}.`;
 
-        const meta2 = document.createElement('p'); meta2.className = 'meta';
+        const meta2 = document.createElement('p');
+        meta2.className = 'meta';
         meta2.innerHTML = `DOI: <a href="https://doi.org/${p.doi}" target="_blank" rel="noopener noreferrer">${p.doi}</a>`;
 
-        const links = document.createElement('p'); links.className = 'links';
+        const links = document.createElement('p');
+        links.className = 'links';
         links.innerHTML = `<strong>PDF:</strong> <a href="${p.pdf}" target="_blank" rel="noopener noreferrer">Download</a>`;
 
-        const legal = document.createElement('p'); legal.className = 'legal';
+        const legal = document.createElement('p');
+        legal.className = 'legal';
         legal.textContent = 'Made available according to § 38(4) UrhG and the Nomos self-archiving policy.';
 
         content.append(h, meta1, meta2, links, legal);
@@ -84,5 +114,6 @@
         root.appendChild(wrap);
       });
   </script>
+
 </body>
 </html>
