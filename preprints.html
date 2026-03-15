@@ -62,18 +62,28 @@
 
   <script>
     // --- Preprints list ---
-    const PREPRINTS = [
-      {
-        title: "Parlamentswahlen nach dem doppelt-proportionalen Sitzzuteilungsverfahren im Lichte der territorialen Repräsentation",
-        year: 2023,
-        journal: "Zeitschrift für Parlamentsfragen (ZParl)",
-        volume: "54",
-        issue: "3",
-        pages: "571–595",
-        doi: "10.5771/0340-1758-2023-3-571",
-        pdf: "preprints/zparl-2023-preprint.pdf"
-      }
-    ];
+const PREPRINTS = [
+  {
+    title: "Parlamentswahlen nach dem doppelt-proportionalen Sitzzuteilungsverfahren im Lichte der territorialen Repräsentation",
+    year: 2023,
+    journal: "Zeitschrift für Parlamentsfragen (ZParl)",
+    volume: "54",
+    issue: "3",
+    pages: "571–595",
+    doi: "10.5771/0340-1758-2023-3-571",
+    pdf: "preprints/zparl-2023-preprint.pdf"
+  },
+  {
+    title: "Proportionality in two dimensions: resolving an old dilemma of political (mis)representation",
+    year: 2021,
+    journal: "SVPW Congress",
+    volume: "",
+    issue: "",
+    pages: "",
+    doi: "",
+    pdf: "preprints/Proportionality-in-Two-Dimensions_Luescher_20210129.pdf"
+  }
+];
 
     PREPRINTS
       .sort((a,b)=> (b.year||0)-(a.year||0))
