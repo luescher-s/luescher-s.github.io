@@ -1,4 +1,4 @@
-```html
+```html id="bi6mgt"
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -225,8 +225,21 @@
     </section>
 
     <section>
+      <h2>Mandate und Offerten</h2>
+      <p>
+        Bei Interesse kläre ich Fragestellung, Datenlage, Umfang und Zeithorizont gerne in einem ersten
+        unverbindlichen Austausch. Auf dieser Grundlage erstelle ich bei Bedarf eine unverbindliche Offerte.
+      </p>
+    </section>
+
+    <section>
       <h2>Kontakt</h2>
-      <p><a href="mailto:luescher@zda.uzh.ch">luescher@zda.uzh.ch</a></p>
+      <p>
+        <a href="#" id="mail-link">E-Mail schreiben</a>
+      </p>
+      <noscript>
+        <p>sandro.luescher [at] gmail [punkt] com</p>
+      </noscript>
     </section>
 
     <footer>
@@ -241,6 +254,25 @@
     </footer>
 
   </div>
+
+  <script>
+    const mailLink = document.getElementById("mail-link");
+
+    if (mailLink) {
+      mailLink.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const coded = [
+          115, 97, 110, 100, 114, 111, 46, 108, 117, 101, 115, 99, 104, 101, 114,
+          64,
+          103, 109, 97, 105, 108, 46, 99, 111, 109
+        ];
+
+        const address = coded.map(code => String.fromCharCode(code)).join("");
+        window.location.href = "mailto:" + address;
+      });
+    }
+  </script>
 </body>
 </html>
 ```
