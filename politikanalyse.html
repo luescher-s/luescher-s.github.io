@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <title>Lüscher Politikanalyse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lüscher Politikanalyse bietet empirisch fundierte Analysen, Simulationen und Wirkungsanalysen institutioneller Reformen und politischer Entscheidungsprozesse.">
+  <meta name="description" content="Lüscher Politikanalyse bietet empirisch fundierte Analysen, Simulationen, Wirkungsabschätzungen und parteistrategische Beratung für politische und öffentliche Akteure.">
 
-  <!-- Favicon -->
   <link rel="icon" href="logo-ohne-text.png" type="image/png">
 
   <style>
     :root {
-      --text: #1a1a1a;
-      --muted: #555;
-      --accent: #2c3e50;
-      --light: #f5f7f9;
-      --border: #e0e0e0;
+      --text: #17202a;
+      --muted: #5f6b76;
+      --accent: #1f3a4d;
+      --accent-soft: #eef3f6;
+      --border: #dfe6eb;
+      --background: #ffffff;
+      --card: #ffffff;
+      --max-width: 980px;
     }
 
     * {
@@ -23,34 +25,33 @@
     }
 
     body {
+      margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
+      background: var(--background);
       line-height: 1.65;
+      font-size: 16px;
     }
 
     .container {
-      max-width: 960px;
+      max-width: var(--max-width);
       margin: 0 auto;
-      padding: 60px 24px;
+      padding: 56px 24px 44px;
     }
 
     header {
-      margin-bottom: 80px;
+      margin-bottom: 56px;
     }
 
     .logo-wrapper {
-      max-width: 820px;
+      max-width: 760px;
+      margin-bottom: 34px;
     }
 
     .site-logo {
       display: block;
       width: 100%;
-      max-width: 820px;
       height: auto;
-      margin-bottom: 20px;
     }
 
     .visually-hidden {
@@ -65,54 +66,143 @@
       border: 0;
     }
 
+    .hero {
+      max-width: 760px;
+      padding-top: 10px;
+    }
+
+    .hero-kicker {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.82rem;
+    }
+
+    .hero h2 {
+      margin: 0 0 18px;
+      color: var(--text);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.12;
+      font-weight: 650;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 720px;
+    }
+
     section {
-      margin-bottom: 50px;
+      margin-bottom: 58px;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      margin-bottom: 24px;
     }
 
     h2 {
-      font-size: 1.4em;
-      font-weight: 500;
-      margin-bottom: 15px;
+      margin: 0 0 14px;
       color: var(--accent);
+      font-size: 1.35rem;
+      line-height: 1.3;
+      font-weight: 620;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 1.05rem;
+      line-height: 1.35;
+      font-weight: 620;
     }
 
     p {
       margin-top: 0;
     }
 
-    ul {
-      margin: 0;
-      padding-left: 22px;
+    .lead-box {
+      padding: 30px 32px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      max-width: 860px;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
-
-    .highlight {
-      background-color: var(--light);
-      padding: 28px;
-      border-left: 3px solid var(--accent);
+    .lead-box p:last-child {
+      margin-bottom: 0;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      gap: 18px;
     }
 
     .card {
       border: 1px solid var(--border);
-      padding: 20px;
-      border-radius: 4px;
-      background-color: #fff;
+      border-radius: 6px;
+      background: var(--card);
+      padding: 22px 22px 20px;
     }
 
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.1em;
-      font-weight: 500;
-      color: var(--accent);
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .compact-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 10px 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .compact-list li {
+      padding-left: 18px;
+      position: relative;
+      color: var(--muted);
+    }
+
+    .compact-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.75em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .contact-box {
+      max-width: 760px;
+      padding: 28px 32px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 10px 16px;
+      border-radius: 4px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 560;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      opacity: 0.92;
     }
 
     a {
@@ -125,12 +215,16 @@
     }
 
     footer {
-      margin-top: 100px;
-      padding-top: 30px;
+      margin-top: 90px;
+      padding-top: 28px;
       border-top: 1px solid var(--border);
-      font-size: 0.9em;
       color: var(--muted);
-      max-width: 760px;
+      font-size: 0.9rem;
+      max-width: 800px;
+    }
+
+    footer p {
+      margin-bottom: 12px;
     }
 
     footer a {
@@ -139,19 +233,24 @@
 
     @media (max-width: 600px) {
       .container {
-        padding: 40px 20px;
+        padding: 38px 20px 34px;
       }
 
       header {
-        margin-bottom: 60px;
+        margin-bottom: 42px;
       }
 
-      .site-logo {
-        max-width: 100%;
+      .logo-wrapper {
+        margin-bottom: 28px;
       }
 
-      .highlight {
-        padding: 22px;
+      .lead-box,
+      .contact-box {
+        padding: 24px 22px;
+      }
+
+      section {
+        margin-bottom: 48px;
       }
     }
   </style>
@@ -162,92 +261,155 @@
 
     <header>
       <h1 class="visually-hidden">Lüscher Politikanalyse</h1>
+
       <div class="logo-wrapper">
         <img src="logo.png" alt="Lüscher Politikanalyse" class="site-logo">
       </div>
+
+      <div class="hero">
+        <p class="hero-kicker">Empirische Politikanalyse und Beratung</p>
+        <h2>Analysen, Simulationen und strategische Orientierung für politische Entscheidungsprozesse.</h2>
+        <p>
+          Lüscher Politikanalyse unterstützt öffentliche Institutionen, Parteien, Verbände und politische
+          Organisationen mit wissenschaftlich fundierten Entscheidungsgrundlagen.
+        </p>
+      </div>
     </header>
 
-<section class="highlight">
-  <p>
-    Politische Institutionen prägen, wie Entscheidungen vorbereitet, getroffen und umgesetzt werden.
-    Reformen solcher Regeln können politische Anreize, Mehrheitsverhältnisse und Repräsentationswirkungen
-    erheblich verändern.
-  </p>
-  <p>
-    Lüscher Politikanalyse unterstützt öffentliche und politische Akteure mit empirischen Analysen,
-    Simulationen und Wirkungsabschätzungen. Im Zentrum steht die Frage, welche Folgen institutionelle
-    Reformoptionen voraussichtlich haben und wie sie vergleichend beurteilt werden können.
-  </p>
-</section>
-
-
-
-    <section>
-      <h2>Expertise</h2>
+    <section class="lead-box">
       <p>
-        Mein Name ist Sandro Lüscher. Ich bin Politologe, wohne in Aarau und habe 2024 an der Universität Zürich
-        zu kantonalen Wahlsystemreformen in der Schweiz promoviert. In meiner Dissertation untersuchte ich deren
-        Entstehung, Ausgestaltung und politische Auswirkungen auf der Grundlage vergleichender Fallstudien und
-        quantitativer Wirkungsanalysen.
+        Politische Institutionen bestimmen, wie Entscheidungen vorbereitet, getroffen und umgesetzt werden.
+        Reformen solcher Regeln können politische Anreize, Mehrheitsverhältnisse und Repräsentationswirkungen
+        erheblich verändern.
       </p>
       <p>
-        Derzeit arbeite ich als Postdoc am Zentrum für Demokratie der Universität Zürich. Meine aktuelle Forschung
-        befasst sich unter anderem mit Vernehmlassungs- und Konsultationsprozessen, institutionellen Reformen und
-        alternativen Entscheidungslogiken in politischen Systemen.
+        Im Zentrum meiner Arbeit steht die empirische Beurteilung solcher institutioneller und strategischer
+        Fragen: Welche Effekte sind zu erwarten? Welche Reformoptionen sind vergleichbar? Und welche
+        politischen Handlungsspielräume ergeben sich daraus?
       </p>
     </section>
 
     <section>
-      <h2>Was ich anbiete</h2>
+      <div class="section-intro">
+        <h2>Profil</h2>
+        <p>
+          Mein Name ist Sandro Lüscher. Ich bin Politologe, wohne in Aarau und habe 2024 an der Universität
+          Zürich zu kantonalen Wahlsystemreformen in der Schweiz promoviert. In meiner Dissertation untersuchte
+          ich deren Entstehung, Ausgestaltung und politische Auswirkungen anhand vergleichender Fallstudien und
+          quantitativer Wirkungsanalysen.
+        </p>
+        <p>
+          Derzeit arbeite ich als Postdoc am Zentrum für Demokratie der Universität Zürich. Meine aktuelle
+          Forschung befasst sich unter anderem mit Vernehmlassungs- und Konsultationsprozessen, institutionellen
+          Reformen und alternativen Entscheidungslogiken in politischen Systemen.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-intro">
+        <h2>Leistungen</h2>
+        <p>
+          Die Angebote richten sich an Akteure, die politische Entwicklungen, institutionelle Reformen oder
+          strategische Ausgangslagen empirisch fundiert beurteilen möchten.
+        </p>
+      </div>
+
       <div class="grid">
         <div class="card">
           <h3>Wirkungsanalysen</h3>
-          <p>Empirische Analysen alternativer Wahlsysteme, institutioneller Regelungen und politischer Reformoptionen.</p>
+          <p>
+            Empirische Analysen von Wahlsystemen, institutionellen Regeln, politischen Reformoptionen und deren
+            erwartbaren Folgen.
+          </p>
         </div>
+
         <div class="card">
           <h3>Simulationen</h3>
-          <p>Simulationen von Sitzverteilungen, Proportionalität, Repräsentation und institutionellen Reformeffekten.</p>
+          <p>
+            Simulationen von Sitzverteilungen, Proportionalität, Repräsentation, Mehrheitsverhältnissen und
+            institutionellen Reformeffekten.
+          </p>
         </div>
+
         <div class="card">
           <h3>Entscheidungsgrundlagen</h3>
-          <p>Datenbasierte Analysen, die politische und administrative Akteure bei der Beurteilung institutioneller Reformoptionen unterstützen.</p>
+          <p>
+            Datenbasierte Grundlagen für politische, administrative und organisatorische Entscheidungsprozesse.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Parteistrategische Beratung</h3>
+          <p>
+            Bei Bedarf Beratung zu politischen Ausgangslagen, Positionierung, Kampagnenlogiken und wahlbezogenen
+            Handlungsoptionen.
+          </p>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Arbeitsweise</h2>
-      <ul>
-        <li>Unabhängig und transparent</li>
-        <li>Wissenschaftlich präzise</li>
-        <li>Empirisch, daten- und simulationsbasiert</li>
-        <li>Vergleichend statt normativ</li>
+      <div class="section-intro">
+        <h2>Thematische Schwerpunkte</h2>
+      </div>
+
+      <ul class="compact-list">
+        <li>Wahlsysteme und Sitzverteilungen</li>
+        <li>Institutionelle Reformen</li>
+        <li>Repräsentation und Proportionalität</li>
+        <li>Vernehmlassungs- und Konsultationsprozesse</li>
+        <li>Politische Entscheidungsprozesse</li>
+        <li>Parteien, Kampagnen und strategische Positionierung</li>
       </ul>
     </section>
 
     <section>
-      <h2>Mandate und Offerten</h2>
-      <p>
-        Bei Interesse kläre ich Fragestellung, Datenlage, Umfang und Zeithorizont gerne in einem ersten
-        unverbindlichen Austausch. Auf dieser Grundlage erstelle ich bei Bedarf eine unverbindliche Offerte.
-      </p>
+      <div class="section-intro">
+        <h2>Arbeitsweise</h2>
+      </div>
+
+      <ul class="compact-list">
+        <li>Unabhängig und transparent</li>
+        <li>Wissenschaftlich präzise</li>
+        <li>Empirisch, daten- und simulationsbasiert</li>
+        <li>Vergleichend und nachvollziehbar</li>
+        <li>Auftragsspezifisch und ergebnisorientiert</li>
+        <li>Klar getrennt von meiner universitären Tätigkeit</li>
+      </ul>
     </section>
 
     <section>
-      <h2>Kontakt</h2>
-      <p>
-        <a href="#" id="mail-link">E-Mail schreiben</a>
-      </p>
-      <noscript>
-        <p>sandro.luescher [at] gmail [punkt] com</p>
-      </noscript>
+      <div class="section-intro">
+        <h2>Mandate und Offerten</h2>
+        <p>
+          Fragestellung, Datenlage, Umfang und Zeithorizont kläre ich gerne in einem ersten unverbindlichen
+          Austausch. Auf dieser Grundlage erstelle ich bei Bedarf eine Offerte für ein konkretes Mandat.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-box">
+        <h2>Kontakt</h2>
+        <p>
+          Für Anfragen zu Analysen, Simulationen, Wirkungsabschätzungen oder Beratungsmandaten erreichen Sie
+          mich per E-Mail.
+        </p>
+        <p>
+          <a href="#" id="mail-link" class="button">E-Mail schreiben</a>
+        </p>
+        <noscript>
+          <p>sandro.luescher [at] gmail [punkt] com</p>
+        </noscript>
+      </div>
     </section>
 
     <footer>
       <p>
         Lüscher Politikanalyse ist eine selbständige Beratungstätigkeit von Dr. Sandro Lüscher.
         Sie erfolgt ausserhalb der universitären Anstellung. Erbracht werden ausschliesslich mandatierte
-        Gutachten, Analysen und Beratungsleistungen; Forschungsfördermittel werden nicht eingeworben.
+        Gutachten, Analysen, Simulationen und Beratungsleistungen; Forschungsfördermittel werden nicht eingeworben.
       </p>
       <p>
         <a href="index.html">Zurück zur akademischen Website</a>
@@ -276,4 +438,3 @@
   </script>
 </body>
 </html>
-```
