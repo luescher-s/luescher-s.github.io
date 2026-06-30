@@ -67,7 +67,7 @@
     }
 
     .hero {
-      max-width: 780px;
+      max-width: 760px;
       padding-top: 10px;
     }
 
@@ -81,19 +81,12 @@
     }
 
     .hero h2 {
-      margin: 0 0 18px;
+      margin: 0;
       color: var(--text);
       font-size: clamp(2rem, 4vw, 3.1rem);
       line-height: 1.12;
       font-weight: 650;
       letter-spacing: -0.03em;
-    }
-
-    .hero p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.08rem;
-      max-width: 740px;
     }
 
     section {
@@ -139,8 +132,9 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
+      max-width: 880px;
     }
 
     .card {
@@ -231,6 +225,12 @@
       color: var(--muted);
     }
 
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 600px) {
       .container {
         padding: 38px 20px 34px;
@@ -268,25 +268,22 @@
 
       <div class="hero">
         <p class="hero-kicker">Analyse und Beratung für Politik und Verwaltung</p>
-        <h2>Empirisch fundierte Entscheidungsgrundlagen für politische und institutionelle Fragen.</h2>
-        <p>
-          Lüscher Politikanalyse unterstützt Parteien, öffentliche Verwaltungen und politische Organisationen
-          mit Analysen, Gutachten, Simulationen und strategischer Beratung auf Mandatsbasis.
-        </p>
+        <h2>Politische Fragen empirisch klären.</h2>
       </div>
     </header>
 
-<section class="lead-box">
-  <p>
-    Lüscher Politikanalyse bietet wissenschaftlich fundierte Analysen und Beratung für Parteien,
-    öffentliche Verwaltungen und politische Organisationen. Im Zentrum stehen politische Fragen,
-    bei denen empirische Evidenz, institutionelles Verständnis und strategische Einordnung zusammenkommen.
-  </p>
-  <p>
-    Je nach Fragestellung entstehen daraus Gutachten, Kurzgutachten, Datenanalysen, Simulationen,
-    Wahl- und Abstimmungsanalysen, Präsentationen oder strategische Beratungsmandate.
-  </p>
-</section>
+    <section class="lead-box">
+      <p>
+        Lüscher Politikanalyse bietet empirisch fundierte Analyse und Beratung für Parteien,
+        öffentliche Verwaltungen und politische Organisationen.
+      </p>
+      <p>
+        Im Zentrum stehen politische und institutionelle Fragestellungen, die eine präzise Einordnung,
+        belastbare Datengrundlagen oder strategische Orientierung erfordern. Die Mandate reichen von
+        Gutachten und Kurzgutachten über Datenanalysen und Simulationen bis zu Wahl-, Abstimmungs-
+        und Strategieberatung.
+      </p>
+    </section>
 
     <section>
       <div class="section-intro">
@@ -362,6 +359,21 @@
         <li>Wahl- und Abstimmungsergebnisse</li>
         <li>Politische Entscheidungs- und Konsultationsprozesse</li>
         <li>Parteien, Kampagnen und strategische Positionierung</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-intro">
+        <h2>Arbeitsweise</h2>
+      </div>
+
+      <ul class="compact-list">
+        <li>Empirisch und datenbasiert</li>
+        <li>Wissenschaftlich präzise</li>
+        <li>Transparent in Annahmen und Methode</li>
+        <li>Vergleichend und nachvollziehbar</li>
+        <li>Auftragsspezifisch und ergebnisorientiert</li>
+        <li>Klar getrennt von meiner universitären Tätigkeit</li>
       </ul>
     </section>
 
