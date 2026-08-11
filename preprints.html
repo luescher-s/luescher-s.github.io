@@ -10,12 +10,14 @@
 
 <!-- Google Scholar metadata -->
 
-<meta name="citation_title" content="Proportionality in two dimensions: resolving an old dilemma of political (mis)representation">
+<!-- 2026 -->
+<meta name="citation_title" content="Seat Reversals and Candidate Status Changes under Biproportional Representation">
 <meta name="citation_author" content="Sandro Lüscher">
-<meta name="citation_publication_date" content="2021/02/04">
-<meta name="citation_conference_title" content="SVPW-Kongress">
-<meta name="citation_pdf_url" content="https://luescher-s.github.io/preprints/Proportionality-in-Two-Dimensions_Luescher_20210129.pdf">
+<meta name="citation_publication_date" content="2026/08/10">
+<meta name="citation_doi" content="10.21203/rs.3.rs-10500080/v1">
+<meta name="citation_pdf_url" content="https://luescher-s.github.io/preprints/Seat-Reversals-and-Candidate-Status-Changes_Luescher_2026.pdf">
 
+<!-- 2023 -->
 <meta name="citation_title" content="Parlamentswahlen nach dem doppelt-proportionalen Sitzzuteilungsverfahren im Lichte der territorialen Repräsentation">
 <meta name="citation_author" content="Sandro Lüscher">
 <meta name="citation_journal_title" content="Zeitschrift für Parlamentsfragen">
@@ -27,85 +29,97 @@
 <meta name="citation_doi" content="10.5771/0340-1758-2023-3-571">
 <meta name="citation_pdf_url" content="https://luescher-s.github.io/preprints/zparl-2023-preprint.pdf">
 
+<!-- 2021 -->
+<meta name="citation_title" content="Proportionality in two dimensions: resolving an old dilemma of political (mis)representation">
+<meta name="citation_author" content="Sandro Lüscher">
+<meta name="citation_publication_date" content="2021/02/04">
+<meta name="citation_conference_title" content="SVPW Congress">
+<meta name="citation_pdf_url" content="https://luescher-s.github.io/preprints/Proportionality-in-Two-Dimensions_Luescher_20210129.pdf">
+
 <style>
 
-body{
-font-family:'Roboto',Arial,sans-serif;
-background:url('background.jpg') no-repeat center top fixed;
-background-size:cover;
-margin:0;
-min-height:100vh;
-color:#222
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: url('background.jpg') no-repeat center top fixed;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    color: #222;
 }
 
-.container{
-background:#fff;
-max-width:700px;
-margin:64px auto 40px;
-box-shadow:0 8px 32px rgba(90,141,238,.13);
-border-radius:18px;
-padding:32px;
-border:2px solid #000
+.container {
+    background: #fff;
+    max-width: 700px;
+    margin: 64px auto 40px;
+    box-shadow: 0 8px 32px rgba(90,141,238,.13);
+    border-radius: 18px;
+    padding: 32px;
+    border: 2px solid #000;
 }
 
-h1{
-font-size:1.8em;
-text-align:center;
-margin:0 0 1rem 0;
-color:#000
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: #000;
 }
 
-.list{
-margin-top:8px
+.list {
+    margin-top: 8px;
 }
 
-.entry{
-display:flex;
-gap:12px;
-align-items:flex-start;
-padding:12px 0;
-border-bottom:1px solid #eee
+.entry {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.badge{
-flex:0 0 auto;
-font-size:.78em;
-background:#e7f0ff;
-border:1px solid #cfe0ff;
-border-radius:12px;
-padding:3px 8px;
-margin-top:2px
+.entry:last-child {
+    border-bottom: none;
 }
 
-.content{
-flex:1 1 auto;
-min-width:0
+.badge {
+    flex: 0 0 auto;
+    font-size: .78em;
+    background: #e7f0ff;
+    border: 1px solid #cfe0ff;
+    border-radius: 12px;
+    padding: 3px 8px;
+    margin-top: 2px;
 }
 
-.title{
-font-size:1.02em;
-margin:0 0 .25em 0;
-color:#000
+.content {
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
-.meta,.legal{
-font-size:.9em;
-color:#444;
-margin:.15em 0
+.title {
+    font-size: 1.02em;
+    margin: 0 0 .25em 0;
+    color: #000;
 }
 
-.links{
-font-size:.9em;
-margin-top:.2em
+.meta,
+.legal {
+    font-size: .9em;
+    color: #444;
+    margin: .15em 0;
 }
 
-a{
-color:#5a8dee;
-text-decoration:none
+.links {
+    font-size: .9em;
+    margin-top: .2em;
 }
 
-a:hover{
-text-decoration:underline
+a {
+    color: #5a8dee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 </style>
@@ -118,7 +132,7 @@ text-decoration:underline
 
 <h1>Preprints</h1>
 
-<!-- Static link for Google Scholar crawler -->
+<!-- Static container for preprint list -->
 
 <div id="preprint-list" class="list"></div>
 
@@ -129,81 +143,140 @@ text-decoration:underline
 const PREPRINTS = [
 
 {
-title: "Parlamentswahlen nach dem doppelt-proportionalen Sitzzuteilungsverfahren im Lichte der territorialen Repräsentation",
-year: 2023,
-journal: "Zeitschrift für Parlamentsfragen (ZParl)",
-volume: "54",
-issue: "3",
-pages: "571–595",
-doi: "10.5771/0340-1758-2023-3-571",
-pdf: "https://luescher-s.github.io/preprints/zparl-2023-preprint.pdf",
-legal: "Made available according to § 38(4) UrhG and the Nomos self-archiving policy."
+    title: "Seat Reversals and Candidate Status Changes under Biproportional Representation",
+    year: 2026,
+    type: "Preprint",
+    venue: "Research Square",
+    date: "10 August 2026",
+    doi: "10.21203/rs.3.rs-10500080/v1",
+    pdf: "https://luescher-s.github.io/preprints/Seat-Reversals-and-Candidate-Status-Changes_Luescher_2026.pdf",
+    legal: "Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)."
 },
 
 {
-title: "Proportionality in two dimensions: resolving an old dilemma of political (mis)representation",
-year: 2021,
-journal: "SVPW Congress",
-volume: "",
-issue: "",
-pages: "",
-doi: "",
-pdf: "https://luescher-s.github.io/preprints/Proportionality-in-Two-Dimensions_Luescher_20210129.pdf"
+    title: "Parlamentswahlen nach dem doppelt-proportionalen Sitzzuteilungsverfahren im Lichte der territorialen Repräsentation",
+    year: 2023,
+    type: "Preprint",
+    journal: "Zeitschrift für Parlamentsfragen (ZParl)",
+    volume: "54",
+    issue: "3",
+    pages: "571–595",
+    doi: "10.5771/0340-1758-2023-3-571",
+    pdf: "https://luescher-s.github.io/preprints/zparl-2023-preprint.pdf",
+    legal: "Made available according to § 38(4) UrhG and the Nomos self-archiving policy."
+},
+
+{
+    title: "Proportionality in two dimensions: resolving an old dilemma of political (mis)representation",
+    year: 2021,
+    type: "Preprint",
+    venue: "SVPW Congress",
+    date: "4 February 2021",
+    doi: "",
+    pdf: "https://luescher-s.github.io/preprints/Proportionality-in-Two-Dimensions_Luescher_20210129.pdf"
 }
 
 ];
 
+const root = document.getElementById("preprint-list");
+
 PREPRINTS
-.sort((a,b)=> (b.year||0)-(a.year||0))
-.forEach(p => {
+    .sort((a, b) => (b.year || 0) - (a.year || 0))
+    .forEach(p => {
 
-const root = document.getElementById('preprint-list');
+        const wrap = document.createElement("div");
+        wrap.className = "entry";
 
-const wrap = document.createElement('div');
-wrap.className = 'entry';
+        const badge = document.createElement("span");
+        badge.className = "badge";
+        badge.textContent = p.type || "Preprint";
 
-const badge = document.createElement('span');
-badge.className = 'badge';
-badge.textContent = 'Preprint';
+        const content = document.createElement("div");
+        content.className = "content";
 
-const content = document.createElement('div');
-content.className = 'content';
+        const h = document.createElement("h2");
+        h.className = "title";
+        h.textContent = p.title;
 
-const h = document.createElement('h2');
-h.className = 'title';
-h.textContent = p.title;
+        content.appendChild(h);
 
-const meta1 = document.createElement('p');
-meta1.className = 'meta';
-meta1.innerHTML = `Published in: <em>${p.journal}</em>, ${p.volume}(${p.issue}), ${p.year}, pp. ${p.pages}.`;
+        const meta1 = document.createElement("p");
+        meta1.className = "meta";
 
-content.appendChild(h);
-content.appendChild(meta1);
+        if (p.journal) {
 
-if(p.doi){
-const meta2 = document.createElement('p');
-meta2.className = 'meta';
-meta2.innerHTML = `DOI: <a href="https://doi.org/${p.doi}" target="_blank">${p.doi}</a>`;
-content.appendChild(meta2);
-}
+            let publication = `Published in: <em>${p.journal}</em>`;
 
-const links = document.createElement('p');
-links.className = 'links';
-links.innerHTML = `<strong>PDF:</strong> <a href="${p.pdf}" target="_blank">Download</a>`;
-content.appendChild(links);
+            if (p.volume) {
+                publication += `, ${p.volume}`;
+            }
 
-if(p.legal){
-const legal = document.createElement('p');
-legal.className = 'legal';
-legal.textContent = p.legal;
-content.appendChild(legal);
-}
+            if (p.issue) {
+                publication += `(${p.issue})`;
+            }
 
-wrap.appendChild(badge);
-wrap.appendChild(content);
-root.appendChild(wrap);
+            if (p.year) {
+                publication += `, ${p.year}`;
+            }
 
-});
+            if (p.pages) {
+                publication += `, pp. ${p.pages}`;
+            }
+
+            publication += ".";
+
+            meta1.innerHTML = publication;
+
+        } else if (p.venue) {
+
+            let publication = `<em>${p.venue}</em>`;
+
+            if (p.date) {
+                publication += `, ${p.date}`;
+            } else if (p.year) {
+                publication += `, ${p.year}`;
+            }
+
+            publication += ".";
+
+            meta1.innerHTML = publication;
+
+        } else {
+
+            meta1.textContent = p.year ? String(p.year) : "";
+
+        }
+
+        content.appendChild(meta1);
+
+        if (p.doi) {
+            const meta2 = document.createElement("p");
+            meta2.className = "meta";
+            meta2.innerHTML =
+                `DOI: <a href="https://doi.org/${p.doi}" target="_blank" rel="noopener noreferrer">${p.doi}</a>`;
+            content.appendChild(meta2);
+        }
+
+        if (p.pdf) {
+            const links = document.createElement("p");
+            links.className = "links";
+            links.innerHTML =
+                `<strong>PDF:</strong> <a href="${p.pdf}" target="_blank" rel="noopener noreferrer">Download</a>`;
+            content.appendChild(links);
+        }
+
+        if (p.legal) {
+            const legal = document.createElement("p");
+            legal.className = "legal";
+            legal.textContent = p.legal;
+            content.appendChild(legal);
+        }
+
+        wrap.appendChild(badge);
+        wrap.appendChild(content);
+        root.appendChild(wrap);
+
+    });
 
 </script>
 
